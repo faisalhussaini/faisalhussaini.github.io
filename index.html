@@ -58,9 +58,11 @@
                  <div id="mycarousel" class="carousel slide" data-ride="carousel">
                      <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active">
+                            
                             <img class="d-block img-fluid"
                                 src="img/uthappizza.png" alt="Uthappizza">
                             <div class="carousel-caption d-none d-md-block">
+                                <h3>Our Lipsmacking Culinary Creations</h3>
                                 <h2 class="mt-0">Uthappizza <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-secondary">$4.99</span></h2>
                         <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and
                             Italian pizza, topped with Cerignola olives, ripe vine
@@ -71,6 +73,7 @@
                         </div>
                         <div class="carousel-item">
                                <div class="carousel-caption d-none d-md-block">
+                                <h3>This Month's Promotions</h3>
                                 <h2>Weekend Grand Buffet</h2>
                                 <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
                                 </div>   
@@ -79,6 +82,7 @@
                               <img class="d-block img-fluid"
                                 src="img/alberto.png" alt="Alberto Somayya">
                             <div class="carousel-caption d-none d-md-block">
+                                <h3>Meet our Culinary Specialists</h3>
                                 <h2>Alberto Somayya</h2>
                         <h4>Executive Chef</h4>
                         <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide
@@ -101,10 +105,18 @@
                     <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
                         <span class="carousel-control-next-icon"></span>
                     </a>
+                     <div class="btn-group" id="carouselButton">
+                    <button class="btn btn-danger btn-sm" id="carousel-pause">
+                	    <span class="fa fa-pause"></span>
+                    </button>
+                    <button class="btn btn-danger btn-sm" id="carousel-play">
+                	    <span class="fa fa-play"></span>
+                    </button>
+                </div>
                  </div>
             </div>
        </div>
-        
+        <!--
         <div class = "row row-content align-items-center">
             <div class = "col-12 col-sm-4 order-sm-last col-md-3">
                 <h3>Our Lipsmacking Culinary Creations</h3>
@@ -127,7 +139,7 @@
 
         <div class = "row row-content align-items-center">
             <div class = "col-12 col-sm-4 col-md-3">
-                <h3>This Month's Promotions</h3>
+                
             </div>
             <div class = "col col-sm col-md">
                 <h2>Weekend Grand Buffet</h2>
@@ -155,6 +167,7 @@
                 </div>
             </div>
         </div>
+        -->
     </div>
 
     <footer class = "footer">
@@ -208,7 +221,18 @@
         $(document).ready(function(){
             $('[data-toggle="tooltip"]').tooltip();
         });
-    </script>s
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("#mycarousel").carousel( { interval: 3000 } );
+            $("#carousel-pause").click(function(){
+                $("#mycarousel").carousel('pause');
+            });
+            $("#carousel-play").click(function(){
+                $("#mycarousel").carousel('cycle');
+            });
+        });
+    </script>
 </body>
 
 </html>
