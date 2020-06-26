@@ -11,6 +11,13 @@
       <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
       <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
       <link href="css/styles.css" rel="stylesheet">
+       <style>
+       /* Set the size of the div element that contains the map */
+      #map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
+    </style>
    </head>
    <body>
       <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
@@ -71,6 +78,8 @@
             </div>
             <div class="col-12 col-sm-6 offset-sm-1">
                <h5>Map of our Location</h5>
+                <div id="map" class="btn-group" role="group">
+                </div>
             </div>
             <div class="col-12 col-sm-11 offset-sm-1">
                <div class="btn-group" role="group">
@@ -190,5 +199,6 @@
       <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
       <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
       <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="js/scripts.js"></script>
    </body>
 </html>
