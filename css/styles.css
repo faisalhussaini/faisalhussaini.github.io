@@ -55,3 +55,16 @@ body {
   bottom: 0px;
   z-index: 1;
 }
+
+.deez {
+    /* The image used */
+  background-image: url("img/toronto.gif");
+
+  /* Full height */
+  height: 50%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
